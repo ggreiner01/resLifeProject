@@ -10,7 +10,8 @@
 
     <title>Album example for Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/album/">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -57,8 +58,7 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Pick A floor</h1>
-		  <a href="\wilkinsonlower"> lower</a>
+          <h1 class="jumbotron-heading">Pick A floor</h1>		  
           <a href="\wilkinsonf1">floor 1</a>
 		  <a href="\wilkinsonf2">floor 2</a>
 		  <a href="\wilkinsonf3">floor 3</a>

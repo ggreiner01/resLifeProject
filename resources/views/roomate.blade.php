@@ -8,7 +8,7 @@
 
 <body>
 	
-	<a href="/dorms">next pick building</a>
+	<a href="/dorm">next pick building</a>
 </body>
 
 </html>
