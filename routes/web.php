@@ -60,7 +60,7 @@ Route::get('/centf4', function () {
     return view('centf4');
 });
 Route::get('/jenksf1', function () {
-    return view('jenkisf1');
+    return view('jenksf1');
 });
 Route::get('/jenksf2', function () {
     return view('jenksf2');
@@ -113,9 +113,6 @@ Route::get('/wilkinsonf3', function () {
 Route::get('/wilkinsonf4', function () {
     return view('wilkinsonf4');
 });
-Route::get('/davisf1', function () {
-    return view('davisf1');
-});
 Route::get('/davisf2', function () {
     return view('davisf2');
 });
@@ -124,4 +121,7 @@ Route::get('/davisf3', function () {
 });
 Route::get('/davisf4', function () {
     return view('davisf4');
+});
+Route::get('/davislower', function () {
+    return view('davislower');
 });

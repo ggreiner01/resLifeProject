@@ -111,9 +111,8 @@
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">rooms</h1>
-          </div>
-
-          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+			</div>
+			<p style="text-align:center;"><img src="/pictures/Centennial_Hall_Fourth_Floor.jpg"  alt="Card image cap" height="500" width ="380" style = "transform:rotate(90deg)"></p> <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
           <h2>Section title</h2>
 		   <a href="\almost">to almost done page</a>

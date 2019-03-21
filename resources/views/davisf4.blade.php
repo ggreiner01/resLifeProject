@@ -113,7 +113,7 @@
             <h1 class="h2">rooms</h1>
           </div>
 
-          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+          <p style="text-align:center;"><img src="/pictures/Davis_Fourth_Floor.jpg"  alt="Card image cap"  height="380" width ="500"></p>
 
           <h2>Section title</h2>
 		   <a href="\almost">to almost done page</a>
