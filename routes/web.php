@@ -102,7 +102,7 @@ Route::get('/watkinsf4', function () {
     return view('watkinsf4');
 });
 Route::get('/wilkinsonf1', function () {
-    return view('ilkinsonf1');
+    return view('wilkinsonf1');
 });
 Route::get('/wilkinsonf2', function () {
     return view('wilkinsonf2');
@@ -110,8 +110,8 @@ Route::get('/wilkinsonf2', function () {
 Route::get('/wilkinsonf3', function () {
     return view('wilkinsonf3');
 });
-Route::get('/wilkinsonf4', function () {
-    return view('wilkinsonf4');
+Route::get('/wilkinsonlower', function () {
+    return view('wilkinsonlower');
 });
 Route::get('/davisf2', function () {
     return view('davisf2');
