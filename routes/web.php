@@ -125,3 +125,6 @@ Route::get('/davisf4', function () {
 Route::get('/davislower', function () {
     return view('davislower');
 });
+Route::get('/aurora.edu', function () {
+    return redirect()->away('https://aurora.edu/');
+});

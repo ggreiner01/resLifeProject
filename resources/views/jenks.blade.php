@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>Jenks Hall</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,51 +21,13 @@
 
   <body>
 
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>Album</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
+    @include("layouts.header")
 
     <main role="main">
 
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Pick A floor</h1>
-          <a href="\jenksf1">floor 1</a>
-		  <a href="\jenksf2">floor 2</a>
-		  <a href="\jenksf3">floor 3</a>
-		  <a href="\jenksf4">floor 4</a>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
         </div>
       </section>
       <div class="album py-5 bg-light">
@@ -78,7 +40,7 @@
                   <p class="card-text">Place holder for first floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button>
+                      <a href="\jenksf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -91,7 +53,7 @@
                   <p class="card-text">place holder for second floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button>
+                      <a href="\jenksf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -104,7 +66,7 @@
                   <p class="card-text">place holder for third floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button>
+                      <a href="\jenksf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -118,7 +80,7 @@
                   <p class="card-text">place holder</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button>
+                      <a href="\jenksf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -136,8 +98,7 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        
       </div>
     </footer>
 
