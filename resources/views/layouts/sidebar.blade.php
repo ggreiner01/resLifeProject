@@ -2,12 +2,7 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a  href = "https://aurora.edu/" class="nav-link" href="#">
-                  Aurora.edu
-                </a>
-              </li>
-              <li class="nav-item">
-                <a  href = "/dorm" class="nav-link" href="#">
+                <a  href = "/reshall" class="nav-link" href="#">
                   <span data-feather="home"></span>
                   Residence Halls
                 </a>

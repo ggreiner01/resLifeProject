@@ -23,7 +23,7 @@
     <main role="main">
 		@include("layouts.header")
       <section class="jumbotron text-center">
-	  	<a href ="\dorm" > back to Res Halls</a>
+	  	<a href ="\reshall" > back to Res Halls</a>
         <div class="container">
           <h1 class="jumbotron-heading">Pick A floor</h1>
         </div>

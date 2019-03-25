@@ -17,8 +17,8 @@ Route::get('/', function () {
 Route::get('/roomate', function () {
     return view('roomate');
 });
-Route::get('/dorm', function () {
-    return view('dorm');
+Route::get('/reshall', function () {
+    return view('reshall');
 });
 Route::get('/floors', function () {
     return view('floors');
