@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>Davis</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,7 +24,7 @@
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
-		<a href ="\dorm" > back to Res Halls</a>
+		<a href ="\reshall" > back to Res Halls</a>
           <h1 class="jumbotron-heading">Pick A floor</h1>
         </div>
       </section>
