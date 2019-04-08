@@ -8,4 +8,10 @@ class Building extends Model
 {
     protected $table = 'Building';
 	public $primaryKey = 'BuildingID';
+	protected $fillable = [
+		'BuildingID',
+		'IsAvailable',
+		'YearOfResidenceID',
+		'BuildingDescription'
+		];
 }

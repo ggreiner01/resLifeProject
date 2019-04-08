@@ -128,3 +128,13 @@ Route::get('/davislower', function () {
 Route::get('/aurora.edu', function () {
     return redirect()->away('https://aurora.edu/');
 });
+Route::resource('admins', 'AdminController');
+Route::resource('boarding', 'BoardingGroupController');
+Route::resource('buildings', 'BuildingsController');
+Route::resource('floors', 'FloorController');
+Route::resource('genders', 'GenderController');
+Route::resource('peoples', 'PeopleToRoomWithController');
+Route::resource('rooms', 'RoomController');
+Route::resource('users', 'UsersController');
+Route::resource('whos', 'WhoAndWhereController');
+Route::resource('years', 'YearOfResidenceController');
