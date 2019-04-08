@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Floor;
+use App\Building;
 
-class FloorController extends Controller
+class BuildingsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class FloorController extends Controller
      */
     public function index()
     {
-        $floors = Floor::all();
+        $buildings = Building::all();
 
-        return view('floors.index', compact('floors'));
+        return view('buildings.index', compact('buildings'));
     }
 
     /**
@@ -27,7 +27,7 @@ class FloorController extends Controller
      */
     public function create()
     {
-        return view('floors.create');
+         return view('buildings.create');
     }
 
     /**
@@ -38,25 +38,21 @@ class FloorController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-		'floorid' =>'required',
+      $request->validate([
         'buildingid'=>'required',
 		'isavailable'=>'required',
-		'gender'=>'required',
 		'yearofresidenceid'=>'required',
-		'floordescription'=>'required'
+		'buildingdescription'=>'required'
       ]);
-      $floor = new Floor([
-		'FloorID' => $request->get('floorid'),
+      $building = new Building([
         'BuildingID' => $request->get('buildingid'),
 		'IsAvailable' => $request->get('isavailable'),
-		'Gender' => $request->get('gender'),
 		'YearOfResidenceID' => $request->get('yearofresidenceid'),
-		'FloorDescription' => $request->get('floordescription')
+		'BuildingDescription' => $request->get('buildingdescription')
       ]);
-	  $floor->timestamps = false;
-      $floor->save();
-      return redirect('/floors')->with('success', 'floor was added');
+	  $building->timestamps = false;
+      $building->save();
+      return redirect('/buildings')->with('success', 'building was added');
     }
 
     /**
@@ -78,11 +74,10 @@ class FloorController extends Controller
      */
     public function edit($id)
     {
-        $floor = Floor::find($id);
+        $building = Building::find($id);
 
-        return view('floors.edit', compact('floor'));
+        return view('buildings.edit', compact('building'));
     }
-    
 
     /**
      * Update the specified resource in storage.
@@ -94,23 +89,21 @@ class FloorController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-        'floorid' =>'required',
-        'buildingid'=>'required',
-		'isavailable'=>'required',
-		'gender'=>'required',
-		'yearofresidenceid'=>'required',
-		'floordescription'=>'required'
-      ]);
-      $floor = Floor::find($id);
-	  $floor->FloorID = $request->get('floorid');
-      $floor->BuildingID = $request->get('buildingid');
-	  $floor->IsAvailable = $request->get('isavailable');
-	  $floor->Gender = $request->get('gender');
-	  $floor->YearOfResidenceID = $request->get('yearofresidenceid');
-	  $floor->FloorDescription = $request->get('floordescription');
-	  $floor->timestamps = false;
-      $floor->save();
-      return redirect('/floors')->with('success', 'floor was changed');
+			'buildingid'=>'required',
+			'isavailable'=>'required',
+			'yearofresidenceid'=>'required',
+			'buildingdescription'=>'required'
+		]);
+
+      $building = Building::find($id);
+      $building->BuildingID = $request->get('buildingid');
+	  $building->IsAvailable = $request->get('isavailable');
+	  $building->YearOfResidenceID = $request->get('yearofresidenceid');
+	  $building->BuildingDescription = $request->get('buildingdescription');
+	  $building->timestamps = false;
+      $building->save();
+
+      return redirect('/buildings')->with('success', 'building has been updataed');
     }
 
     /**
@@ -121,9 +114,9 @@ class FloorController extends Controller
      */
     public function destroy($id)
     {
-        $floor = Floor::find($id);
-		$floor->delete();
+        $building = Building::find($id);
+		$building->delete();
 
-		return redirect('/floors')->with('success', 'floor has been deleted');
+		return redirect('/buildings')->with('success', 'building has been deleted');
     }
 }
