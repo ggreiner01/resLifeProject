@@ -1,5 +1,7 @@
 <?php
+
 use Illuminate\Database\Seeder;
+
 class FloorsTableSeeder extends Seeder
 {
     /**
@@ -14,6 +16,7 @@ class FloorsTableSeeder extends Seeder
 			['FloorID' => 2, 'BuildingID' => 1, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Centennial Second Floor'],
 			['FloorID' => 3, 'BuildingID' => 1, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Centennial Third Floor'],
 			['FloorID' => 4, 'BuildingID' => 1, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Centennial Fourth Floor'],
+
 			['FloorID' => 5, 'BuildingID' => 2, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Davis Lower Floor'],
 			['FloorID' => 6, 'BuildingID' => 2, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Davis Second Floor'],
 			['FloorID' => 7, 'BuildingID' => 2, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Davis Third Floor'],
@@ -35,6 +38,7 @@ class FloorsTableSeeder extends Seeder
 			['FloorID' => 18, 'BuildingID' => 5, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Memorial Second Floor'],
 			['FloorID' => 19, 'BuildingID' => 5, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Memorial Third Floor'],
 			['FloorID' => 20, 'BuildingID' => 5, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Memorial Fourth Floor'],
+
 			['FloorID' => 21, 'BuildingID' => 6, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins East Lower Floor'],
 			['FloorID' => 22, 'BuildingID' => 6, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins East First Floor'],
 			['FloorID' => 23, 'BuildingID' => 6, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins East Second Floor'],
@@ -46,6 +50,7 @@ class FloorsTableSeeder extends Seeder
 			['FloorID' => 28, 'BuildingID' => 7, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins West Second Floor'],
 			['FloorID' => 29, 'BuildingID' => 7, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins West Third Floor'],
 			['FloorID' => 30, 'BuildingID' => 7, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins West Fourth Floor'],
+
 			['FloorID' => 31, 'BuildingID' => 8, 'IsAvailable' => 0, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson First Floor'],
 			['FloorID' => 32, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Second Floor'],
 			['FloorID' => 33, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Third Floor'],

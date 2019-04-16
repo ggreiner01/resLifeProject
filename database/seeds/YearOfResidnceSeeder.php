@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class GenderTableSeeder extends Seeder
+class YearOfResidnceSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,11 +11,11 @@ class GenderTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('Gender')->insert(array(
-            ['Gender' => 'M'],
-            ['Gender' => 'F'],
-            ['Gender' => 'N']
+        DB::table('YearOfResidence')->insert(array(
+            ['Year' => 2019],
+            ['Year' => 2020]
             )
         );
     }
+    
 }
