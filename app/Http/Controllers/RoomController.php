@@ -39,21 +39,21 @@ class RoomController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-		'roomid' => 'required',
 		'buildingid'=>'required',
 		'floorid' =>'required',
         'capacity' => 'required',
 		'amounttaken' => 'required',
 		'isavailable'=>'required',
+		'roomnumber'=>'required',
 		'yearofresidenceid'=>'required'
       ]);
       $room = new Room([
-	    'RoomID' => $request->get('roomid'),
 		'FloorID' => $request->get('floorid'),
         'BuildingID' => $request->get('buildingid'),
 		'Capacity' => $request->get('capacity'),
 		'AmountTaken' => $request->get('amounttaken'),
 		'IsAvailable' => $request->get('isavailable'),
+		'RoomNumber' => $request->get('roomnumber'),
 		'YearOfResidenceID' => $request->get('yearofresidenceid')
       ]);
 	  $room->timestamps = false;
@@ -95,21 +95,21 @@ class RoomController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-			'roomid' => 'required',
 			'buildingid'=>'required',
 			'floorid' =>'required',
 			'capacity' => 'required',
 			'amounttaken' => 'required',
 			'isavailable'=>'required',
+			'roomnumber'=>'required',
 			'yearofresidenceid'=>'required'
       ]);
       $room = Room::find($id);
-	  $room->RoomID = $request->get('roomid');
 	  $room->BuildingID = $request->get('buildingid');
 	  $room->FloorID = $request->get('floorid');
       $room->Capacity = $request->get('capacity');
 	  $room->AmountTaken = $request->get('amounttaken');
 	  $room->IsAvailable = $request->get('isavailable');
+	  $room->RoomNumber = $request->get('roomnumber');
 	  $room->YearOfResidenceID = $request->get('yearofresidenceid');
 	  $room->timestamps = false;
       $room->save();

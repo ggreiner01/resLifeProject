@@ -38,10 +38,10 @@
               <div class="card mb-4 shadow-sm">
                <img class="card-img-top" src="/pictures/Wilkinson_First_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Place holder for first floor</p>
+                  <p class="card-text">Wilkinson First Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\wilkinsonf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/wilkinson/wilkinsonf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -51,10 +51,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Wilkinson_Second_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for second floor</p>
+                  <p class="card-text">Wilkinson Second Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\wilkinsonf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/wilkinson/wilkinsonf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -64,10 +64,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Wilkinson_Third_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for third floor</p>
+                  <p class="card-text">Wilkinson Third Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\wilkinsonf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/wilkinson/wilkinsonf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -78,10 +78,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Wilkinson_Lower_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder</p>
+                  <p class="card-text">Wilkinson Lower Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\wilkinsonlower"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/wilkinson/wilkinsonlower"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>

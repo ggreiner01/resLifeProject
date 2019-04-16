@@ -21,6 +21,7 @@
 		  <td>Capacity</td>
 		  <td>AmountTaken</td>
           <td>IsAvailable</td>
+		  <td>RoomNumber</td>
 		  <td>YearOfResidenceID</td>		  
           <td colspan="2">Action</td>
         </tr>
@@ -34,6 +35,7 @@
 			<td>{{$room->Capacity}}</td>
 			<td>{{$room->AmountTaken}}</td>
             <td>{{$room->IsAvailable}}</td>
+			<td>{{$room->RoomNumber}}</td>
 			<td>{{$room->YearOfResidenceID}}</td>
             <td><a href="{{ route('rooms.edit', $room->RoomID)}}" class="btn btn-primary">Edit</a></td>
             <td>
@@ -47,5 +49,6 @@
         @endforeach
     </tbody>
   </table>
+  <a href="\rooms\create"><button type="button" class="btn btn-primary">create</button></a>
 <div>
 @endsection

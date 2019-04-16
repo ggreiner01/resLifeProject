@@ -23,10 +23,6 @@
       <form method="post" action="{{ route('rooms.store') }}">
 		<div class="form-group">
 				@csrf
-              <label for="roomid">RoomID:</label>
-              <input type="number" class="form-control" name="roomid"  />
-          </div>
-		  <div class="form-group">
               <label for="buildingid">BuildingID:</label>
               <input type="number" class="form-control" name="buildingid" />
           </div>
@@ -45,6 +41,10 @@
 		  <div class="form-group">
               <label for="isavailable">IsAvailable:</label>
               <input type="number" min="0" max="1" class="form-control" name="isavailable"  />
+          </div>
+		    <div class="form-group">
+              <label for="roomnumber">RoomNumber:</label>
+              <input type="text" class="form-control" name="roomnumber"  />
           </div>
 		  <div class="form-group">
               <label for="yearofresidenceid">YearOfResidenceID:</label>

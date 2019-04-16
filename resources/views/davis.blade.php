@@ -35,10 +35,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Davis_Lower_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder</p>
+                  <p class="card-text">Davis Lower Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\davislower"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/davis/davislower"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -48,10 +48,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Davis_Second_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for second floor</p>
+                  <p class="card-text">Davis Second Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\davisf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/davis/davisf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -61,10 +61,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Davis_Third_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for third floor</p>
+                  <p class="card-text">Davis Third Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\davisf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/davis/davisf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -75,10 +75,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Davis_Fourth_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder</p>
+                  <p class="card-text">Davis Fourth Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\davisf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/davis/davisf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>

@@ -38,10 +38,10 @@
               <div class="card mb-4 shadow-sm">
                <img class="card-img-top" src="/pictures/Jenks_First_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Place holder for first floor</p>
+                  <p class="card-text">Jenks Hall First Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\jenksf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/jenks/jenksf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -51,10 +51,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Jenks_Second_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for second floor</p>
+                  <p class="card-text">Jenks Hall Second Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\jenksf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/jenks/jenksf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -64,10 +64,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Jenks_Third_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for third floor</p>
+                  <p class="card-text">Jenks Hall Third Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\jenksf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/jenks/jenksf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -78,10 +78,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Jenks_Fourth_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder</p>
+                  <p class="card-text">Jenks Hall Fourth Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\jenksf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/jenks/jenksf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>

@@ -37,5 +37,6 @@
         @endforeach
     </tbody>
   </table>
+  <a href="\genders\create"><button type="button" class="btn btn-primary">create</button></a>
 <div>
 @endsection

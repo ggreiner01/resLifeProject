@@ -23,10 +23,6 @@
       <form method="post" action="{{ route('rooms.update', $room->RoomID) }}">
         @method('PATCH')
         @csrf
-		<div class="form-group">
-              <label for="roomid">RoomID:</label>
-              <input type="number" class="form-control" name="roomid" value = {{$room->RoomID}} />
-          </div>
 		  <div class="form-group">
               <label for="buildingid">BuildingID:</label>
               <input type="number" class="form-control" name="buildingid" value = {{$room->BuildingID}} />
@@ -46,6 +42,10 @@
 		  <div class="form-group">
               <label for="isavailable">IsAvailable:</label>
               <input type="number" min="0" max="1" class="form-control" name="isavailable" value = {{$room->IsAvailable}} />
+          </div>
+		     <div class="form-group">
+              <label for="roomnumber">RoomNumber:</label>
+              <input type="text" class="form-control" name="roomnumber"  value = {{$room->RoomNumber}} />
           </div>
 		  <div class="form-group">
               <label for="yearofresidenceid">YearOfResidenceID:</label>

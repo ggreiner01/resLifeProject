@@ -38,10 +38,10 @@
               <div class="card mb-4 shadow-sm">
                <img class="card-img-top" src="/pictures/Watkins_First_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Place holder for first floor</p>
+                  <p class="card-text">Watkins First Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\watkinsf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/watkins/watkinsf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -51,10 +51,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Watkins_Second_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for second floor</p>
+                  <p class="card-text">Watkins Second Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\watkinsf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/watkins/watkinsf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -64,10 +64,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Watkins_Third_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for third floor</p>
+                  <p class="card-text">Watkins Third Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\watkinsf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/watkins/watkinsf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -78,10 +78,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Watkins_Fourth_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder</p>
+                  <p class="card-text">Watkins Fourth Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\watkinsf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/watkins/watkinsf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -91,10 +91,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Watkins_Lower_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder</p>
+                  <p class="card-text">Watkins Lower Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\watkinslower"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/watkins/watkinslower"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
