@@ -20,12 +20,6 @@ Route::get('/roomate', function () {
 Route::get('/reshall', function () {
     return view('reshall');
 });
-Route::get('/floors', function () {
-    return view('floors');
-});
-Route::get('/rooms', function () {
-    return view('rooms');
-});
 Route::get('/almost', function () {
     return view('almost');
 });
@@ -47,84 +41,31 @@ Route::get('/wilkinson', function () {
 Route::get('/watkins', function () {
     return view('watkins');
 });
-Route::get('/centf1', function () {
-    return view('centf1');
-});
-Route::get('/centf2', function () {
-    return view('centf2');
-});
-Route::get('/centf3', function () {
-    return view('centf3');
-});
-Route::get('/centf4', function () {
-    return view('centf4');
-});
-Route::get('/jenksf1', function () {
-    return view('jenksf1');
-});
-Route::get('/jenksf2', function () {
-    return view('jenksf2');
-});
-Route::get('/jenksf3', function () {
-    return view('jenksf3');
-});
-Route::get('/jenksf4', function () {
-    return view('jenksf4');
-});
-Route::get('/memlower', function () {
-    return view('memlower');
-});
-Route::get('/memf1', function () {
-    return view('memf1');
-});
-Route::get('/memf2', function () {
-    return view('memf2');
-});
-Route::get('/memf3', function () {
-    return view('memf3');
-});
-Route::get('/memf4', function () {
-    return view('memf4');
-});
-Route::get('/watkinslower', function () {
-    return view('watkinslower');
-});
-Route::get('/watkinsf1', function () {
-    return view('watkinsf1');
-});
-Route::get('/watkinsf2', function () {
-    return view('watkinsf2');
-});
-Route::get('/watkinsf3', function () {
-    return view('watkinsf3');
-});
-Route::get('/watkinsf4', function () {
-    return view('watkinsf4');
-});
-Route::get('/wilkinsonf1', function () {
-    return view('wilkinsonf1');
-});
-Route::get('/wilkinsonf2', function () {
-    return view('wilkinsonf2');
-});
-Route::get('/wilkinsonf3', function () {
-    return view('wilkinsonf3');
-});
-Route::get('/wilkinsonlower', function () {
-    return view('wilkinsonlower');
-});
-Route::get('/davisf2', function () {
-    return view('davisf2');
-});
-Route::get('/davisf3', function () {
-    return view('davisf3');
-});
-Route::get('/davisf4', function () {
-    return view('davisf4');
-});
-Route::get('/davislower', function () {
-    return view('davislower');
-});
+Route::get('/centennial/centf1', 'CentennialController@indexcentf1');
+Route::get('/centennial/centf2', 'CentennialController@indexcentf2');
+Route::get('/centennial/centf3', 'CentennialController@indexcentf3');
+Route::get('/centennial/centf4', 'CentennialController@indexcentf4');
+Route::get('/jenks/jenksf1', 'JenksController@indexjenksf1');
+Route::get('/jenks/jenksf2', 'JenksController@indexjenksf2');
+Route::get('/jenks/jenksf3', 'JenksController@indexjenksf3');
+Route::get('/jenks/jenksf4', 'JenksController@indexjenksf4');
+Route::get('memorial/memf1', 'MemorialController@indexmemf1');
+Route::get('memorial/memf2', 'MemorialController@indexmemf2');
+Route::get('memorial/memf3', 'MemorialController@indexmemf3');
+Route::get('memorial/memf4', 'MemorialController@indexmemf4');
+Route::get('watkins/watkinslower', 'WatkinsController@indexwatkinslower');
+Route::get('watkins/watkinsf1', 'WatkinsController@indexwatkinsf1');
+Route::get('watkins/watkinsf2', 'WatkinsController@indexwatkinsf2');
+Route::get('watkins/watkinsf3', 'WatkinsController@indexwatkinsf3');
+Route::get('watkins/watkinsf4', 'WatkinsController@indexwatkinsf4');
+Route::get('wilkinson/wilkinsonf1', 'WilkinsonController@indexwilkinsonf1');
+Route::get('wilkinson/wilkinsonf2', 'WilkinsonController@indexwilkinsonf2');
+Route::get('wilkinson/wilkinsonf3', 'WilkinsonController@indexwilkinsonf3');
+Route::get('wilkinson/wilkinsonlower', 'WilkinsonController@indexwilkinsonlower');
+Route::get('davis/davisf2', 'DavisController@indexdavisf2');
+Route::get('davis/davisf3', 'DavisController@indexdavisf3');
+Route::get('davis/davisf4', 'DavisController@indexdavisf4');
+Route::get('davis/davislower', 'DavisController@indexdavislower');
 Route::get('/aurora.edu', function () {
     return redirect()->away('https://aurora.edu/');
 });
@@ -138,3 +79,6 @@ Route::resource('rooms', 'RoomController');
 Route::resource('users', 'UsersController');
 Route::resource('whos', 'WhoAndWhereController');
 Route::resource('years', 'YearOfResidenceController');
+Route::get('export', 'MyController@export')->name('export');
+Route::get('importExportView', 'MyController@importExportView');
+Route::post('import', 'MyController@import')->name('import');

@@ -38,10 +38,10 @@
               <div class="card mb-4 shadow-sm">
                <img class="card-img-top" src="/pictures/Mem_First_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Place holder for first floor</p>
+                  <p class="card-text">Memorial First Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\memf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/memorial/memf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -51,10 +51,10 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Mem_Second_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for second floor</p>
+                  <p class="card-text">Memorial Second Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\memf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/memorial/memf2"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
@@ -64,37 +64,23 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Mem_Third_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder for third floor</p>
+                  <p class="card-text">Memorial Third Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\memf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/memorial/memf3"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="/pictures/Mem_Fourth_Floor.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">place holder</p>
+                  <p class="card-text">Memorial Fourth Floor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\memf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-			  <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="/pictures/Mem_Lower_Floor.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">place holder</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="\memlower"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                      <a href="/memorial/memf4"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
                     </div>
                   </div>
                 </div>
