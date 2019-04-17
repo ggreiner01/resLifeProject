@@ -39,7 +39,7 @@
           <div class="table-responsive">
             <table class="table table-striped table-sm">
               <thead>
-                	  <th>Room number</th>
+                <th>Room number</th>
                   <th>capacity</th>
                   <th>availability</th>
 				  <th>spaces taken</th>
@@ -48,6 +48,7 @@
               </thead>
               <tbody>
                @foreach($rooms2 as $room)
+			   @if($room->IsAvailable == 1)
                 <tr>
                   <td>{{ $room->RoomNumber }}</td>
 				  <td>{{ $room->Capacity }}</td>
@@ -59,6 +60,7 @@
 				  <td>{{ $room->AmountTaken }}</td>
                   <td><a href="#" class="btn btn-primary">Choose</a></td>
                 </tr>      
+				@endif
 			@endforeach
               </tbody>
             </table>
@@ -74,6 +76,7 @@
               </thead>
               <tbody>
                @foreach($rooms1 as $room)
+			   @if($room->IsAvailable == 1)
                 <tr>
                   <td>{{ $room->RoomNumber }}</td>
 				  <td>{{ $room->Capacity }}</td>
@@ -85,6 +88,7 @@
 				  <td>{{ $room->AmountTaken }}</td>
                   <td><a href="#" class="btn btn-primary">Choose</a></td>
                 </tr>      
+				@endif
 			@endforeach
               </tbody>
             </table>
