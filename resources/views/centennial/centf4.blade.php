@@ -48,6 +48,7 @@
               </thead>
               <tbody>
             @foreach($rooms as $room)
+			@if($room->IsAvailable == 1)
                 <tr>
                   <td>{{ $room->RoomNumber }}</td>
                   <td>{{ $room->Capacity }}</td>
@@ -59,6 +60,7 @@
 				  <td>{{ $room->AmountTaken }}</td>
                   <td><a href="#" class="btn btn-primary">Choose</a></td>
                 </tr>      
+			@endif
 			@endforeach
               </tbody>
             </table>
