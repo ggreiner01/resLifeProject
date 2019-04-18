@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.crud')
 
 @section('content')
 <style>
@@ -23,20 +23,20 @@
       <form method="post" action="{{ route('users.store') }}">
           <div class="form-group">
               @csrf
-              <label for="studentid">StudentID:</label>
-              <input type="number" class="form-control" name="studentid"/>
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" name="name"/>
           </div>
 		   <div class="form-group">
-              <label for="fname">First Name:</label>
-              <input type="text" class="form-control" name="fname"/>
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email"/>
           </div>
 		  <div class="form-group">
-              <label for="lname">Last Name:</label>
-              <input type="text" class="form-control" name="lname"/>
+              <label for="password">Password:</label>
+              <input type="text" class="form-control" name="password"/>
           </div>
 		  <div class="form-group">
-              <label for="auemail">Au Email:</label>
-              <input type="text" class="form-control" name="auemail"/>
+              <label for="studentid">StudentID:</label>
+              <input type="number" class="form-control" name="studentid"/>
           </div>
 		  <div class="form-group">
               <label for="gender">Gender:</label>
