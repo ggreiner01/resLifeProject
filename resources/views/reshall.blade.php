@@ -9,7 +9,7 @@
 
     <title>Residence Halls</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
@@ -94,6 +94,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="\jenks"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
+                      <a href="\memorial"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
                     </div>
                   </div>
                 </div>
@@ -109,8 +110,8 @@
 				  An elevator is not available in this residence hall. The staff is comprised of ten resident assistants and a residence hall director.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="\watkins"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>                     
-                    </div>                    
+                      <a href="\watkins"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -125,7 +126,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="\wilkinson"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
-                    </div>                    
+                    </div>
                   </div>
                 </div>
               </div>

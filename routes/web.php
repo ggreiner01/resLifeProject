@@ -10,9 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('login');
+    return view('landing');
 });
 Route::get('/roomate', function () {
     return view('roomate');
@@ -79,6 +78,10 @@ Route::resource('rooms', 'RoomController');
 Route::resource('users', 'UsersController');
 Route::resource('whos', 'WhoAndWhereController');
 Route::resource('years', 'YearOfResidenceController');
+
 Route::get('export', 'MyController@export')->name('export');
 Route::get('importExportView', 'MyController@importExportView');
 Route::post('import', 'MyController@import')->name('import');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

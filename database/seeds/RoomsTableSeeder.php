@@ -1,5 +1,7 @@
 <?php
+
 use Illuminate\Database\Seeder;
+
 class RoomsTableSeeder extends Seeder
 {
     /**
@@ -19,6 +21,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 1, 'FloorID' => 1, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '116'],
       ['BuildingID' => 1, 'FloorID' => 1, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '117'],
       ['BuildingID' => 1, 'FloorID' => 1, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '119'],
+
       ['BuildingID' => 1, 'FloorID' => 2, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '202'],
       ['BuildingID' => 1, 'FloorID' => 2, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '203'],
       ['BuildingID' => 1, 'FloorID' => 2, 'Capacity' => 0, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '204'],
@@ -36,6 +39,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 1, 'FloorID' => 2, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '217'],
       ['BuildingID' => 1, 'FloorID' => 2, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '219'],
       ['BuildingID' => 1, 'FloorID' => 2, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '220'],
+
       ['BuildingID' => 1, 'FloorID' => 3, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '302'],
       ['BuildingID' => 1, 'FloorID' => 3, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '303'],
       ['BuildingID' => 1, 'FloorID' => 3, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '304'],
@@ -53,6 +57,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 1, 'FloorID' => 3, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '317'],
       ['BuildingID' => 1, 'FloorID' => 3, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '319'],
       ['BuildingID' => 1, 'FloorID' => 3, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '320'],
+
       ['BuildingID' => 1, 'FloorID' => 4, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '402'],
       ['BuildingID' => 1, 'FloorID' => 4, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '403'],
       ['BuildingID' => 1, 'FloorID' => 4, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '404'],
@@ -77,17 +82,20 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 2, 'FloorID' => 5, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '136'],
       ['BuildingID' => 2, 'FloorID' => 5, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '138'],
       ['BuildingID' => 2, 'FloorID' => 5, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '139'],
+
       ['BuildingID' => 2, 'FloorID' => 6, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '231'],
       ['BuildingID' => 2, 'FloorID' => 6, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '234'],
       ['BuildingID' => 2, 'FloorID' => 6, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '236'],
       ['BuildingID' => 2, 'FloorID' => 6, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '238'],
       ['BuildingID' => 2, 'FloorID' => 6, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '239'],
+
       ['BuildingID' => 2, 'FloorID' => 7, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '331'],
       ['BuildingID' => 2, 'FloorID' => 7, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '332'],
       ['BuildingID' => 2, 'FloorID' => 7, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '334'],
       ['BuildingID' => 2, 'FloorID' => 7, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '336'],
       ['BuildingID' => 2, 'FloorID' => 7, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '338'],
       ['BuildingID' => 2, 'FloorID' => 7, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '339'],
+
       ['BuildingID' => 2, 'FloorID' => 8, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '431'],
       ['BuildingID' => 2, 'FloorID' => 8, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '432'],
       ['BuildingID' => 2, 'FloorID' => 8, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '434'],
@@ -104,6 +112,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 3, 'FloorID' => 9, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '115'],
       ['BuildingID' => 3, 'FloorID' => 9, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '116'],
       ['BuildingID' => 3, 'FloorID' => 9, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '118'],
+
       ['BuildingID' => 3, 'FloorID' => 10, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '203'],
       ['BuildingID' => 3, 'FloorID' => 10, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '205'],
       ['BuildingID' => 3, 'FloorID' => 10, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '206'],
@@ -116,6 +125,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 3, 'FloorID' => 10, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '216'],
       ['BuildingID' => 3, 'FloorID' => 10, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '217'],
       ['BuildingID' => 3, 'FloorID' => 10, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '218'],
+
       ['BuildingID' => 3, 'FloorID' => 11, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '303'],
       ['BuildingID' => 3, 'FloorID' => 11, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '305'],
       ['BuildingID' => 3, 'FloorID' => 11, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '306'],
@@ -128,6 +138,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 3, 'FloorID' => 11, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '316'],
       ['BuildingID' => 3, 'FloorID' => 11, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '317'],
       ['BuildingID' => 3, 'FloorID' => 11, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '318'],
+
       ['BuildingID' => 3, 'FloorID' => 12, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '403'],
       ['BuildingID' => 3, 'FloorID' => 12, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '405'],
       ['BuildingID' => 3, 'FloorID' => 12, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '407A'],
@@ -143,10 +154,12 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 3, 'FloorID' => 12, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '417A'],
       ['BuildingID' => 3, 'FloorID' => 12, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '417B'],
       ['BuildingID' => 3, 'FloorID' => 12, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '418'],
+
       #Jenks West 4
       ['BuildingID' => 4, 'FloorID' => 13, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '127'],
       ['BuildingID' => 4, 'FloorID' => 13, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '129A'],
       ['BuildingID' => 4, 'FloorID' => 13, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '129A'],
+
       ['BuildingID' => 4, 'FloorID' => 14, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '221A'],
       ['BuildingID' => 4, 'FloorID' => 14, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '221B'],
       ['BuildingID' => 4, 'FloorID' => 14, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '223A'],
@@ -156,6 +169,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 4, 'FloorID' => 14, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '229B'],
       ['BuildingID' => 4, 'FloorID' => 14, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '231A'],
       ['BuildingID' => 4, 'FloorID' => 14, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '231B'],
+
       ['BuildingID' => 4, 'FloorID' => 15, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '321A'],
       ['BuildingID' => 4, 'FloorID' => 15, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '321B'],
       ['BuildingID' => 4, 'FloorID' => 15, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '323A'],
@@ -165,6 +179,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 4, 'FloorID' => 15, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '329B'],
       ['BuildingID' => 4, 'FloorID' => 15, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '331A'],
       ['BuildingID' => 4, 'FloorID' => 15, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '331B'],
+
       ['BuildingID' => 4, 'FloorID' => 16, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '321A'],
       ['BuildingID' => 4, 'FloorID' => 16, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '321B'],
       ['BuildingID' => 4, 'FloorID' => 16, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '323A'],
@@ -186,6 +201,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 5, 'FloorID' => 17, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '118'],
       ['BuildingID' => 5, 'FloorID' => 17, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '120'],
       ['BuildingID' => 5, 'FloorID' => 17, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '122'],
+
       ['BuildingID' => 5, 'FloorID' => 18, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '201'],
       ['BuildingID' => 5, 'FloorID' => 18, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '202'],
       ['BuildingID' => 5, 'FloorID' => 18, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '204'],
@@ -200,6 +216,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 5, 'FloorID' => 18, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '218'],
       ['BuildingID' => 5, 'FloorID' => 18, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '220'],
       ['BuildingID' => 5, 'FloorID' => 18, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '222'],
+
       ['BuildingID' => 5, 'FloorID' => 19, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '301'],
       ['BuildingID' => 5, 'FloorID' => 19, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '302'],
       ['BuildingID' => 5, 'FloorID' => 19, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '304'],
@@ -214,6 +231,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 5, 'FloorID' => 19, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '318'],
       ['BuildingID' => 5, 'FloorID' => 19, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '320'],
       ['BuildingID' => 5, 'FloorID' => 19, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '322'],
+
       ['BuildingID' => 5, 'FloorID' => 20, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '401'],
       ['BuildingID' => 5, 'FloorID' => 20, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '402'],
       ['BuildingID' => 5, 'FloorID' => 20, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '404'],
@@ -227,6 +245,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 5, 'FloorID' => 20, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '416'],
       ['BuildingID' => 5, 'FloorID' => 20, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '418'],
       ['BuildingID' => 5, 'FloorID' => 20, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '422'],
+
       #Watkins East 6
       ['BuildingID' => 6, 'FloorID' => 21, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '003'],
       ['BuildingID' => 6, 'FloorID' => 21, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '005'],
@@ -236,6 +255,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 6, 'FloorID' => 21, 'Capacity' => 4, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '011'],
       ['BuildingID' => 6, 'FloorID' => 21, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '012'],
       ['BuildingID' => 6, 'FloorID' => 21, 'Capacity' => 4, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '014'],
+
       ['BuildingID' => 6, 'FloorID' => 22, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '104'],
       ['BuildingID' => 6, 'FloorID' => 22, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '106'],
       ['BuildingID' => 6, 'FloorID' => 22, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '107'],
@@ -245,6 +265,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 6, 'FloorID' => 22, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '112'],
       ['BuildingID' => 6, 'FloorID' => 22, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '113'],
       ['BuildingID' => 6, 'FloorID' => 22, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '114'],
+
       ['BuildingID' => 6, 'FloorID' => 23, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '201A'],
       ['BuildingID' => 6, 'FloorID' => 23, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '201B'],
       ['BuildingID' => 6, 'FloorID' => 23, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '202'],
@@ -258,6 +279,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 6, 'FloorID' => 23, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '212'],
       ['BuildingID' => 6, 'FloorID' => 23, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '213'],
       ['BuildingID' => 6, 'FloorID' => 23, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '214'],
+
       ['BuildingID' => 6, 'FloorID' => 24, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '301A'],
       ['BuildingID' => 6, 'FloorID' => 24, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '301B'],
       ['BuildingID' => 6, 'FloorID' => 24, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '302'],
@@ -271,6 +293,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 6, 'FloorID' => 24, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '312'],
       ['BuildingID' => 6, 'FloorID' => 24, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '313'],
       ['BuildingID' => 6, 'FloorID' => 24, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '314'],
+
       ['BuildingID' => 6, 'FloorID' => 25, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '401A'],
       ['BuildingID' => 6, 'FloorID' => 25, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '401B'],
       ['BuildingID' => 6, 'FloorID' => 25, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '402'],
@@ -284,6 +307,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 6, 'FloorID' => 25, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '412'],
       ['BuildingID' => 6, 'FloorID' => 25, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '413'],
       ['BuildingID' => 6, 'FloorID' => 25, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '414'],
+
       #Watkins West 7
       ['BuildingID' => 7, 'FloorID' => 26, 'Capacity' => 0, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '049'],
       ['BuildingID' => 7, 'FloorID' => 26, 'Capacity' => 4, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '051'],
@@ -292,6 +316,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 7, 'FloorID' => 26, 'Capacity' => 4, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '058'],
       ['BuildingID' => 7, 'FloorID' => 26, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '059'],
       ['BuildingID' => 7, 'FloorID' => 26, 'Capacity' => 4, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '061'],
+
       ['BuildingID' => 7, 'FloorID' => 27, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '151'],
       ['BuildingID' => 7, 'FloorID' => 27, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '152'],
       ['BuildingID' => 7, 'FloorID' => 27, 'Capacity' => 1, 'AmountTaken' => 1, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '153'],
@@ -303,6 +328,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 7, 'FloorID' => 27, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '161'],
       ['BuildingID' => 7, 'FloorID' => 27, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '162'],
       ['BuildingID' => 7, 'FloorID' => 27, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '163'],
+
       ['BuildingID' => 7, 'FloorID' => 28, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '251'],
       ['BuildingID' => 7, 'FloorID' => 28, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '252A'],
       ['BuildingID' => 7, 'FloorID' => 28, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '252B'],
@@ -317,6 +343,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 7, 'FloorID' => 28, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '263'],
       ['BuildingID' => 7, 'FloorID' => 28, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '264'],
       ['BuildingID' => 7, 'FloorID' => 28, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '265'],
+
       ['BuildingID' => 7, 'FloorID' => 29, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '351'],
       ['BuildingID' => 7, 'FloorID' => 29, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '352A'],
       ['BuildingID' => 7, 'FloorID' => 29, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '352B'],
@@ -331,6 +358,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 7, 'FloorID' => 29, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '363'],
       ['BuildingID' => 7, 'FloorID' => 29, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '364'],
       ['BuildingID' => 7, 'FloorID' => 29, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '365'],
+
       ['BuildingID' => 7, 'FloorID' => 30, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '451'],
       ['BuildingID' => 7, 'FloorID' => 30, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '452A'],
       ['BuildingID' => 7, 'FloorID' => 30, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '452B'],
@@ -345,10 +373,12 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 7, 'FloorID' => 30, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '463'],
       ['BuildingID' => 7, 'FloorID' => 30, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '464'],
       ['BuildingID' => 7, 'FloorID' => 30, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '465'],
+
       #Wilkinson 8
       ['BuildingID' => 8, 'FloorID' => 31, 'Capacity' => 0, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '001'],
       ['BuildingID' => 8, 'FloorID' => 31, 'Capacity' => 0, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '002'],
       ['BuildingID' => 8, 'FloorID' => 31, 'Capacity' => 0, 'AmountTaken' => 0, 'IsAvailable' => 0, 'YearOfResidenceID' => 1, 'RoomNumber' => '003'],
+
       ['BuildingID' => 8, 'FloorID' => 32, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '101'],
       ['BuildingID' => 8, 'FloorID' => 32, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '102'],
       ['BuildingID' => 8, 'FloorID' => 32, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '103'],
@@ -360,6 +390,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 8, 'FloorID' => 32, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '114'],
       ['BuildingID' => 8, 'FloorID' => 32, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '115'],
       ['BuildingID' => 8, 'FloorID' => 32, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '116'],
+
       ['BuildingID' => 8, 'FloorID' => 33, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '201'],
       ['BuildingID' => 8, 'FloorID' => 33, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '202'],
       ['BuildingID' => 8, 'FloorID' => 33, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '203'],
@@ -373,6 +404,7 @@ class RoomsTableSeeder extends Seeder
       ['BuildingID' => 8, 'FloorID' => 33, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '214'],
       ['BuildingID' => 8, 'FloorID' => 33, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '215'],
       ['BuildingID' => 8, 'FloorID' => 33, 'Capacity' => 1, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '216'],
+
       ['BuildingID' => 8, 'FloorID' => 34, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '301'],
       ['BuildingID' => 8, 'FloorID' => 34, 'Capacity' => 3, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '302'],
       ['BuildingID' => 8, 'FloorID' => 34, 'Capacity' => 2, 'AmountTaken' => 0, 'IsAvailable' => 1, 'YearOfResidenceID' => 1, 'RoomNumber' => '303'],
