@@ -56,7 +56,7 @@ Route::get('watkins/watkinslower', 'WatkinsController@indexwatkinslower');
 Route::get('watkins/watkinsf1', 'WatkinsController@indexwatkinsf1');
 Route::get('watkins/watkinsf2', 'WatkinsController@indexwatkinsf2');
 Route::get('watkins/watkinsf3', 'WatkinsController@indexwatkinsf3');
-Route::get('watkins/watkinsf4', 'WatkinsController@indexwatkinsf4');
+Route::get('watkins/watkinslower', 'WatkinsController@indexwatkinslower');
 Route::get('wilkinson/wilkinsonf1', 'WilkinsonController@indexwilkinsonf1');
 Route::get('wilkinson/wilkinsonf2', 'WilkinsonController@indexwilkinsonf2');
 Route::get('wilkinson/wilkinsonf3', 'WilkinsonController@indexwilkinsonf3');

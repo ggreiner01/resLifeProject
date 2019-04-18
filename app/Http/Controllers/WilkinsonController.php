@@ -32,7 +32,7 @@ class WilkinsonController extends Controller
     }
 	    public function indexwilkinsonlower()
     {
-		$floor = \DB::table('Floor')->where('FloorDescription', '=', 'Wilkinson Fourth Floor')->first();
+		$floor = \DB::table('Floor')->where('FloorDescription', '=', 'Wilkinson Lower Floor')->first();
 		$rooms = \DB::table('Room')->where('FloorID', '=', $floor->FloorID)->get();
 		return view('/wilkinson/wilkinsonlower', compact('rooms', 'floor'));
 		
