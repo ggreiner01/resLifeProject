@@ -50,11 +50,13 @@ class FloorsTableSeeder extends Seeder
 			['FloorID' => 28, 'BuildingID' => 7, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins West Second Floor'],
 			['FloorID' => 29, 'BuildingID' => 7, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins West Third Floor'],
 			['FloorID' => 30, 'BuildingID' => 7, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Watkins West Fourth Floor'],
+			
+      ['FloorID' => 31, 'BuildingID' => 8, 'IsAvailable' => 0, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Lower Floor'],
+			['FloorID' => 32, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson First Floor'],
+			['FloorID' => 33, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Second Floor'],
+			['FloorID' => 34, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Third Floor']
+			
 
-			['FloorID' => 31, 'BuildingID' => 8, 'IsAvailable' => 0, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson First Floor'],
-			['FloorID' => 32, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 2, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Second Floor'],
-			['FloorID' => 33, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Third Floor'],
-			['FloorID' => 34, 'BuildingID' => 8, 'IsAvailable' => 1, 'Gender' => 1, 'YearOfResidenceID' => 1, 'FloorDescription' => 'Wilkinson Fourth Floor']
 			)
 		);
     }

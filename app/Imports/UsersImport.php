@@ -33,10 +33,9 @@ class UsersImport implements ToModel
 	
 		
         $user = new Users([
-            'StudentID' => $row[0],
-            'FName'    => $row[2],
-			'LName'    => $row[1],	
-			'AuEmail' => $row[5],
+            'name' => $row[3],
+			'email' => $row[5],
+			'StudentID'=> $row[0],
 			'Gender' => $gender,
 			'BoardingGroupID' => $row[6],
 			'Admins' => 1,

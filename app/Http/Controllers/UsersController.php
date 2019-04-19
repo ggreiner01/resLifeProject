@@ -39,26 +39,25 @@ class UsersController extends Controller
     public function store(Request $request)
     {
          $request->validate([
-		'studentid' => 'required',
-		'fname'=>'required',
-		'lname' =>'required',
-        'auemail' => 'required',
+		'name'=>'required',
+		'email'=>'required',
+		'password'=>'required',
+		'studentid'=>'required',
 		'gender'=> 'required',
 		'boardinggroupid' => 'required',
 		'admins' => 'required',
 		'yearofresidenceid'=>'required'
       ]);
-      $user = new Users([
-	    'StudentID' => $request->get('studentid'),
-		'FName' => $request->get('fname'),
-        'LName' => $request->get('lname'),
-		'AuEmail' => $request->get('auemail'),
+      $user = new Users([	    
+		'name' => $request->get('name'),
+		'email' => $request->get('email'),
+		'password' => $request->get('password'),
+		'StudentID' => $request->get('studentid'),
 		'Gender' => $request->get('gender'),
 		'BoardingGroupID' => $request->get('boardinggroupid'),
 		'Admins' => $request->get('admins'),
 		'YearOfResidenceID' => $request->get('yearofresidenceid')
       ]);
-	  $user->timestamps = false;
       $user->save();
 	  return redirect('/users')->with('success', 'user was added');
     }
@@ -97,25 +96,24 @@ class UsersController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-		'studentid' => 'required',
-		'fname'=>'required',
-		'lname' =>'required',
-        'auemail' => 'required',
+		'name'=>'required',
+		'email'=>'required',
+		'password'=>'required',
+		'studentid'=>'required',
 		'gender'=> 'required',
 		'boardinggroupid' => 'required',
 		'admins' => 'required',
 		'yearofresidenceid'=>'required'
       ]);
       $user = Users::find($id);
-	  $user->StudentID = $request->get('studentid');
-	  $user->FName = $request->get('fname');
-      $user->LName = $request->get('lname');
-	  $user->AuEmail = $request->get('auemail');
+	  $user->name = $request->get('name');
+	  $user->password = $request->get('password');
+	  $user->email = $request->get('email');
+	  $user->StudentID = $request->get('studentid'); 
 	  $user->Gender = $request->get('gender');
 	  $user->BoardingGroupID = $request->get('boardinggroupid');
 	  $user->Admins = $request->get('admins');
 	  $user->YearOfResidenceID = $request->get('yearofresidenceid');
-	  $user->timestamps = false;
       $user->save();
       return redirect('/users')->with('success', 'user was changed');
     }

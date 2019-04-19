@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.crud')
 
 @section('content')
 <style>
@@ -20,24 +20,24 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{ route('users.update', $user->StudentID) }}">
+      <form method="post" action="{{ route('users.update', $user->id) }}">
         @method('PATCH')
         @csrf
-			<div class="form-group">
-              <label for="studentid">StudentID:</label>
-              <input type="number" class="form-control" name="studentid" value ={{$user->StudentID }} />
+		<div class ="form-group">
+		 <label for="name">name:</label>
+              <input type="text" class="form-control" name="name" value={{$user->name }} />
           </div>
 		   <div class="form-group">
-              <label for="fname">First Name:</label>
-              <input type="text" class="form-control" name="fname" value ={{$user->FName }} />
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" value={{$user->email }} />
           </div>
 		  <div class="form-group">
-              <label for="lname">Last Name:</label>
-              <input type="text" class="form-control" name="lname" value ={{$user->LName}} />
+              <label for="password">Password:</label>
+              <input type="text" class="form-control" name="password" value ={{$user->password }} />
           </div>
 		  <div class="form-group">
-              <label for="auemail">Au Email:</label>
-              <input type="text" class="form-control" name="auemail" value ={{$user->AuEmail }} />
+              <label for="studentid">StudentID:</label>
+              <input type="number" class="form-control" name="studentid" value = {{$user->StudentID}} />
           </div>
 		  <div class="form-group">
               <label for="gender">Gender:</label>
