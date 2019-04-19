@@ -14,10 +14,9 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-	
+
 	'providers' => [
 
-	....
 
 	Maatwebsite\Excel\ExcelServiceProvider::class,
 
@@ -25,7 +24,6 @@ return [
 
 	'aliases' => [
 
-	....
 
 	'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 

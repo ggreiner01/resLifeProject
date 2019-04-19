@@ -24,57 +24,9 @@
 		    @include("layouts.header")
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">"Name" Wants to Room with You</h1>
+          <h1 class="jumbotron-heading"></h1>
         </div>
       </section>
-        <div class="album py-5 bg-light">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                  <img class="card-img-top" src="https://aurora.edu/_files/img/student-life/res-life/centennial-800x600.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">What Building</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="\centennial"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                 <img class="card-img-top" src="/pictures/Centennial_Hall_First_Floor.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">What floor + Room?</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="\centf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                  <img class="card-img-top" src="https://aurora.edu/_files/img/student-life/res-life/centennial-800x600.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">Description? Maybe other roomates?</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="\centennial"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href=""><button type="button" class="btn btn-primary">Accept</button></a>
-                <a href=""><button type="button" class="btn btn-danger">Decline</button></a>
-                <a href="\reshall"><button type="button" class="btn btn-info">View all rooms</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
     </main>
 
     <!-- Bootstrap core JavaScript
