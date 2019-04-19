@@ -11,6 +11,9 @@
 |
 */
 Route::get('/', function () {
+    return view('auth/login');
+});
+Route::get('/landing', function () {
     return view('landing');
 });
 Route::get('/roomate', function () {
@@ -85,3 +88,5 @@ Route::post('import', 'MyController@import')->name('import');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/selection/{room_id}', 'SelectionController@show');
