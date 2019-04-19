@@ -4,8 +4,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
 <nav class="navbar navbar-custom">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
+        <li><a class="navbar-nav mr-auto" href="aurora.edu" style ="color:white;">Aurora University</a></li>
+      </ul>
+
           <!-- Authentication Links -->
           @guest
               <li class="nav-item">
@@ -17,13 +21,14 @@
                   </li>
               @endif
           @else
-              <li class="nav-item dropdown">
-                  <a id="navbarDropdown" style="color:white" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                      {{ Auth::user()->name }} <span class="caret"></span>
+              <li class="nav-item dropdown" style = "color:#00467F">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                style = "color:white;">
+                      {{ Auth::user()->name }}
                   </a>
 
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" style="color:white" href="{{ route('logout') }}"
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="{{ route('logout') }}"
                          onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
                           {{ __('Logout') }}
@@ -35,10 +40,9 @@
                   </div>
               </li>
           @endguest
-          
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="aurora.edu" style = "color:white;">Aurora University</a>
+
       <li class="nav-item dropdown" style = "color:#00467F">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
         style = "color:white;">
          Admin Pages
         </a>
@@ -55,13 +59,8 @@
           <a class="dropdown-item" href="/years">Years</a>
         </div>
       </li>
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" style = "color:white;"href="#">Sign out</a>
-        </li>
-      </ul>
-      
-      
+
+
 </nav>
 <style>
 	.navbar-custom {

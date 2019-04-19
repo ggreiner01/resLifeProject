@@ -9,7 +9,7 @@
 
     <title>Centennial First Floor</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
@@ -31,9 +31,9 @@
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Centennial Hall first floor</h1>
         </div>
-		  
+
 		<p style="text-align:center;"><img src="/pictures/Centennial_Hall_First_Floor.jpg"  alt="Card image cap" height="500" width ="380" style = "transform:rotate(270deg)"></p>
-			
+
         <h2>{{$floor->FloorDescription}}</h2>
 		   <a href="\almost">to almost done page</a>
         <div class="table-responsive">
@@ -49,20 +49,17 @@
               </thead>
               <tbody>
 			  @foreach($rooms as $room)
-			  @if($room->IsAvailable == 1)
                 <tr>
                   <td>{{ $room->RoomNumber }}</td>
                   <td>{{ $room->Capacity }}</td>
-                  @if (  $room->IsAvailable == 1)
-						<td>yes</td>  
+                   @if (  $room->IsAvailable == 1)
+						<td>yes</td>
 				  @else
 						<td>no</td>
 				  @endif
-				
 				  <td>{{ $room->AmountTaken }}</td>
-                  <td><a href="#" class="btn btn-primary">Choose</a></td>
-                </tr>  
-				@endif				
+                  <td><a href="{{route('selection', ['room_id' => '$room->RoomID'])}}" class="btn btn-primary">Choose</a></td>
+                </tr>
 			@endforeach
               </tbody>
             </table>
