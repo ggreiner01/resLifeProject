@@ -7,16 +7,16 @@
 
 <nav class="navbar navbar-custom">
       <ul class="navbar-nav mr-auto">
-        <li><a class="navbar-nav mr-auto" href="aurora.edu" style ="color:white;">Aurora University</a></li>
+        <li class="nav-item" style = "color:#00467F"><a class="navbar-nav mr-auto" href="/aurora.edu" style ="color:white;">Aurora University</a></li>
       </ul>
 
           <!-- Authentication Links -->
           @guest
-              <li class="nav-item">
+              <li class="nav-item" style = "color:#00467F">
                   <a class="nav-link" style="color:white" href="{{ route('login') }}">{{ __('Login') }}</a>
               </li>
               @if (Route::has('register'))
-                  <li class="nav-item">
+                  <li class="nav-item" style = "color:#00467F">
                       <a class="nav-link" style="color:white" href="{{ route('register') }}">{{ __('Register') }}</a>
                   </li>
               @endif
@@ -40,7 +40,7 @@
                   </div>
               </li>
           @endguest
-
+	@if(Auth::check())
       <li class="nav-item dropdown" style = "color:#00467F">
         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
         style = "color:white;">
@@ -59,12 +59,13 @@
           <a class="dropdown-item" href="/years">Years</a>
         </div>
       </li>
-
+	@endif
 
 </nav>
 <style>
 	.navbar-custom {
     background-color: #00467F;
 	}
+}
 
 </style>
