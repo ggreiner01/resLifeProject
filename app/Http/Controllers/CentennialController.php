@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Users;
 use App\Room;
-
+use App\WhoAndWhere;
 use App\Floor;
 
 class CentennialController extends Controller
@@ -51,7 +52,7 @@ class CentennialController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -62,7 +63,29 @@ class CentennialController extends Controller
      */
     public function store(Request $request)
     {
-        //
+		$student = Users::find(auth()->id());
+		$room = Room::find($request->get('id'));
+		$whos = $year = \DB::table('WhoAndWhere')->where('StudentID', '=', $student->StudentID)->first();
+		if($whos == null){
+        $who = new WhoAndWhere([
+		'StudentID' => $student->StudentID,
+		'BuildingID' => $room->BuildingID,
+		'FloorID' => $room->FloorID,
+		'RoomID' => $room->RoomID,
+		'YearOfResidenceID' => $room->YearOfResidenceID
+		]);
+		$who->timestamps = false;
+		$room->timestamps = false;
+        $who->save();
+		$room->AmountTaken = $room->AmountTaken += 1;
+		if($room->Capacity == $room->AmountTaken)
+			$room->IsAvailable = 0;
+		$room->save();
+		return redirect('/almost')->with('success', 'You have choosen a room');
+		}
+		else{
+			return redirect('/almost')->with('Hey', 'You have already choosen a room');
+		}
     }
 
     /**
@@ -96,7 +119,7 @@ class CentennialController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**
@@ -107,6 +130,13 @@ class CentennialController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $who = WhoAndWhere::find($id);
+		$who->delete();
+		$room->timestamps = false;
+		$room->AmountTaken = $room->AmountTaken -= 1;
+		if($room->Capacity > $room->AmountTaken)
+			$room->IsAvailable = 1;
+		$room->save();
+		return redirect('/reshall')->with('success', 'you can pick another room');
     }
 }

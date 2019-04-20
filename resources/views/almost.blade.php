@@ -7,7 +7,12 @@
 </head>
 
 <body>
-		<p>message here</p>
+		<p>Want a different room?</p>
+		<form action="{{ route('selection.destroy', $user->StudentID)}}" method="post">
+                  @csrf
+                  @method('DELETE')
+                  <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
 </body>
 
 </html>

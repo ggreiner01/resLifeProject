@@ -59,7 +59,10 @@
 						<td>no</td>
 				  @endif
 				  <td>{{ $room->AmountTaken }}</td>
-                  <td><a href="#" class="btn btn-primary">Choose</a></td>
+                   <form method="post" action="{{ route('selection.store', ['id' => $room->RoomID]) }}">
+				   @csrf
+                  <td><button type="submit" class="btn btn-primary">Choose</button></td>	
+				  </form>
                 </tr>  
 				@endif
 			@endforeach

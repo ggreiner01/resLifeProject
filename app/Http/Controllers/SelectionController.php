@@ -3,57 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Users;
 use App\Room;
 use App\WhoAndWhere;
 use App\Floor;
 
-class DavisController extends Controller
+class SelectionController extends Controller
 {
-     public function indexdavislower()
-    {
-		$floor = \DB::table('Floor')->where('FloorDescription', '=', 'Davis Lower Floor')->first();
-		$rooms = \DB::table('Room')->where('FloorID', '=', $floor->FloorID)->get();
-		return view('/davis/davislower', compact('rooms', 'floor'));
-		
-    }
-	    public function indexdavisf2()
-    {
-		$floor = \DB::table('Floor')->where('FloorDescription', '=', 'Davis Second Floor')->first();
-		$rooms = \DB::table('Room')->where('FloorID', '=', $floor->FloorID)->get();
-		return view('/davis/davisf2', compact('rooms', 'floor'));
-		
-    }
-	    public function indexdavisf3()
-    {
-		$floor = \DB::table('Floor')->where('FloorDescription', '=', 'Davis Third Floor')->first();
-		$rooms = \DB::table('Room')->where('FloorID', '=', $floor->FloorID)->get();
-		return view('/davis/davisf3', compact('rooms', 'floor'));
-		
-    }
-	    public function indexdavisf4()
-    {
-		$floor = \DB::table('Floor')->where('FloorDescription', '=', 'Davis Fourth Floor')->first();
-		$rooms = \DB::table('Room')->where('FloorID', '=', $floor->FloorID)->get();
-		return view('/davis/davisf3', compact('rooms', 'floor'));
-		
-    }
-	public function create()
-    {
-        
-    }
+	public function almost(){
+		$user = Users::find(auth()->id());
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+        return view('/almost', compact('user'));
+	}
     public function store(Request $request)
     {
 		$student = Users::find(auth()->id());
 		$room = Room::find($request->get('id'));
-		$whos = $year = \DB::table('WhoAndWhere')->where('StudentID', '=', $student->StudentID)->first();
+		$whos = \DB::table('WhoAndWhere')->where('StudentID', '=', $student->StudentID)->first();
 		if($whos == null){
         $who = new WhoAndWhere([
 		'StudentID' => $student->StudentID,
@@ -118,10 +85,13 @@ class DavisController extends Controller
      */
     public function destroy($id)
     {
-            $who = WhoAndWhere::find($id);
-		$who->delete();
+		$student = Users::find(auth()->id());
+		$whos = \DB::table('WhoAndWhere')->where('StudentID', '=', $student->StudentID)->first();
+		$rooms = \DB::table('Room')->where('RoomID', '=', $whos->RoomID)->first();
+		$room = Room::find($rooms->RoomID);
+		$who = \DB::table('WhoAndWhere')->where('StudentID', '=', $student->StudentID)->delete();
 		$room->timestamps = false;
-		$room->AmountTaken = $room->AmountTaken -= 1;
+		$room->AmountTaken = $room->AmountTaken - 1;
 		if($room->Capacity > $room->AmountTaken)
 			$room->IsAvailable = 1;
 		$room->save();
