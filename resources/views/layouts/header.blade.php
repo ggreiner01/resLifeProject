@@ -40,7 +40,7 @@
                   </div>
               </li>
           @endguest
-	@if(Auth::check())
+	@if(Auth::user()->Admins > 1)
       <li class="nav-item dropdown" style = "color:#00467F">
         <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
         style = "color:white;">
