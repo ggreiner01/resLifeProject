@@ -18,6 +18,7 @@ class CentennialController extends Controller
      */
     public function indexcentf1()
     {
+	
 		$floor = \DB::table('Floor')->where('FloorDescription', '=', 'Centennial First Floor')->first();
 		$rooms = \DB::table('Room')->where('FloorID', '=', $floor->FloorID)->get();
 		return view('/centennial/centf1', compact('rooms', 'floor'));

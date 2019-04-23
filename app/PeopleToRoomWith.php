@@ -12,6 +12,7 @@ class PeopleToRoomWith extends Model
 	}
     protected $table = 'PeopleToRoomWith';
 	 protected $fillable = [
+	    'Asker',
 		'StudentID1',
 		'StudentID2',
 		'BuildingID',

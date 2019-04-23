@@ -20,8 +20,9 @@ class SelectionController extends Controller
     {
 		$student = Users::find(auth()->id());
 		$room = Room::find($request->get('id'));
+		$floor = Floor::find($room->FloorID);
 		$whos = \DB::table('WhoAndWhere')->where('StudentID', '=', $student->StudentID)->first();
-		if($whos == null){
+		if($whos == null && $student->Gender == $floor->Gender){
         $who = new WhoAndWhere([
 		'StudentID' => $student->StudentID,
 		'BuildingID' => $room->BuildingID,
@@ -36,13 +37,14 @@ class SelectionController extends Controller
 		if($room->Capacity == $room->AmountTaken)
 			$room->IsAvailable = 0;
 		$room->save();
-		return redirect('/almost')->with('success', 'You have choosen a room');
+		return redirect('/almost')->with('error', 'You have choosen a room');
+		}else if($student->Gender != $floor->Gender){
+			return redirect('/almost')->with('error', 'You cannot pick this room');
 		}
 		else{
-			return redirect('/almost')->with('Hey', 'You have already choosen a room');
+			return redirect('/select')->with('error', 'You have already choosen a room');
 		}
     }
-
     /**
      * Display the specified resource.
      *

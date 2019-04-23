@@ -16,13 +16,13 @@ Route::get('/', function () {
 Route::get('/landing', function () {
     return view('landing');
 });
-Route::get('/roomate', function () {
-    return view('roomate');
-});
+//Route::get('/roomate', 'RoommateController@roomate');
 Route::get('/reshall', function () {
     return view('reshall');
 });
 Route::get('/almost', 'SelectionController@almost');
+Route::get('/input', 'SelectionController@input');
+Route::get('/select', 'RoommateController@selection');
 Route::get('/centennial', function () {
     return view('centennial');
 });
@@ -70,6 +70,7 @@ Route::get('/aurora.edu', function () {
     return redirect()->away('https://aurora.edu/');
 });
 Route::resource('selection', 'SelectionController');
+Route::resource('roomate', 'RoommateController');
 Route::resource('admins', 'AdminController');
 Route::resource('boarding', 'BoardingGroupController');
 Route::resource('buildings', 'BuildingsController');
@@ -86,4 +87,3 @@ Route::get('importExportView', 'MyController@importExportView');
 Route::post('import', 'MyController@import')->name('import');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-//Route::get('/selection/{room_id}', 'SelectionController@show');
