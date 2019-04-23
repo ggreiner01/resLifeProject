@@ -126,4 +126,10 @@ class FloorController extends Controller
 
 		return redirect('/floors')->with('success', 'floor has been deleted');
     }
+	 public function Centennial()
+    {
+        $floors = Floor::all();
+
+        return view('/centennial', compact('floors'));
+    }
 }

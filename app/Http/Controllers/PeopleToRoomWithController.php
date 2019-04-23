@@ -39,6 +39,7 @@ class PeopleToRoomWithController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+		'asker' => 'required',
 		'studentid1' => 'required',
 		'studentid2' => 'required',
 		'buildingid'=>'required',
@@ -47,6 +48,7 @@ class PeopleToRoomWithController extends Controller
 		'yearofresidenceid'=>'required'
       ]);
       $people = new PeopleToRoomWith([
+	    'Asker'=> $request->get('asker'),
 	    'StudentID1' => $request->get('studentid1'),
 		'StudentID2' => $request->get('studentid2'),
 		'BuildingID' => $request->get('buildingid'),

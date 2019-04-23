@@ -17,6 +17,13 @@ Route::get('/', function () {
 Route::get('/landing', function () {
     return view('landing');
 })->middleware('auth');
+//Route::get('/roomate', 'RoommateController@roomate');
+Route::get('/reshall', function () {
+    return view('reshall');
+})->middleware('auth');
+Route::get('/almost', 'SelectionController@almost')->middleware('auth');
+Route::get('/input', 'SelectionController@input')->middleware('auth');
+Route::get('/select', 'RoommateController@selection')->middleware('auth');
 
 Route::get('/roomate', function () {
     return view('roomate');
@@ -27,7 +34,6 @@ Route::get('/reshall', function () {
 })->middleware('auth');
 
 Route::get('/almost', 'SelectionController@almost')->middleware('auth');
-
 Route::get('/centennial', function () {
     return view('centennial');
 })->middleware('auth');
@@ -88,8 +94,13 @@ Route::resource('users', 'UsersController')->middleware('auth');
 Route::resource('whos', 'WhoAndWhereController')->middleware('auth');
 Route::resource('years', 'YearOfResidenceController')->middleware('auth');
 
+
 Route::get('export', 'MyController@export')->name('export');
 Route::get('importExportView', 'MyController@importExportView');
 Route::post('import', 'MyController@import')->name('import');
 Auth::routes();
+
+
+
 //Route::get('/selection/{room_id}', 'SelectionController@show');
+

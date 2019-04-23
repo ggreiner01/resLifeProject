@@ -12,7 +12,9 @@
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-danger" type="submit">Delete</button>
-                </form>
+        </form>
+		<p>would you like to choose people to room with</p>
+		<a href ="/select"><button class="btn btn-danger" type="submit">Roommate</button></a>
 </body>
 
 </html>

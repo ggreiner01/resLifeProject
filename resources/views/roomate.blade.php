@@ -24,7 +24,7 @@
 		    @include("layouts.header")
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">"Name" Wants to Room with You</h1>
+          <h1 class="jumbotron-heading">{{ $asker->name }} Wants to Room with You</h1>
         </div>
       </section>
         <div class="album py-5 bg-light">
@@ -34,7 +34,7 @@
                 <div class="card mb-4 shadow-sm">
                   <img class="card-img-top" src="https://aurora.edu/_files/img/student-life/res-life/centennial-800x600.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <p class="card-text">What Building</p>
+                    <p class="card-text">{{$building->BuildingDescription}}</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="\centennial"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
@@ -47,10 +47,10 @@
                 <div class="card mb-4 shadow-sm">
                  <img class="card-img-top" src="/pictures/Centennial_Hall_First_Floor.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <p class="card-text">What floor + Room?</p>
+                    <p class="card-text">{{$floor->FloorDescription}} room {{ $room->RoomNumber }}</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <a href="\centf1"><button type="button" class="btn btn-sm btn-outline-secondary">to rooms</button></a>
+                        
                       </div>
                     </div>
                   </div>
@@ -60,16 +60,18 @@
                 <div class="card mb-4 shadow-sm">
                   <img class="card-img-top" src="https://aurora.edu/_files/img/student-life/res-life/centennial-800x600.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <p class="card-text">Description? Maybe other roomates?</p>
+                    <p class="card-text">they would also like you to room with {{ $user2->name }} </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <a href="\centennial"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <a href=""><button type="button" class="btn btn-primary">Accept</button></a>
-                <a href=""><button type="button" class="btn btn-danger">Decline</button></a>
+                 <form method="post" action="{{ route('selection.store', ['id' => $room->RoomID]) }}">
+				   @csrf
+                  <td><button type="submit" class="btn btn-primary">Choose</button></td>	
+				  </form>
+                <a href="/reshall"><button type="button" class="btn btn-danger">Decline</button></a>
                 <a href="\reshall"><button type="button" class="btn btn-info">View all rooms</button></a>
               </div>
             </div>
