@@ -24,9 +24,16 @@
 		    @include("layouts.header")
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading"></h1>
+          <h1 class="jumbotron-heading"> You must wait your turn</h1>
         </div>
       </section>
+      <h2 class="jumbotron text-center"> Try again on:
+      <?php
+      $group = Auth::user()->BoardingGroupID;
+      $boardingTime = \DB::table('boardinggroup')->where('BoardingGroup', '=', $group)->value('TimeToLogIn');
+      echo date('l, M jS, Y g:i A', strtotime($boardingTime));
+      ?>
+      <h2>
     </main>
 
     <!-- Bootstrap core JavaScript
