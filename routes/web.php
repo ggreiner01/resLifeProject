@@ -93,7 +93,7 @@ Route::resource('rooms', 'RoomController')->middleware('auth');
 Route::resource('users', 'UsersController')->middleware('auth');
 Route::resource('whos', 'WhoAndWhereController')->middleware('auth');
 Route::resource('years', 'YearOfResidenceController')->middleware('auth');
-
+Route::resource('roomate', 'RoommateController')->middleware('auth');
 
 Route::get('export', 'MyController@export')->name('export');
 Route::get('importExportView', 'MyController@importExportView');
