@@ -51,6 +51,7 @@ Route::get('/wilkinson', function () {
 })->middleware('auth', 'group');
 Route::get('/watkins', function () {
     return view('watkins');
+  
 })->middleware('auth', 'group');
 Route::get('/centennial/centf1', 'CentennialController@indexcentf1')->middleware('auth', 'group');
 Route::get('/centennial/centf2', 'CentennialController@indexcentf2')->middleware('auth', 'group');
@@ -68,6 +69,7 @@ Route::get('watkins/watkinslower', 'WatkinsController@indexwatkinslower')->middl
 Route::get('watkins/watkinsf1', 'WatkinsController@indexwatkinsf1')->middleware('auth', 'group');
 Route::get('watkins/watkinsf2', 'WatkinsController@indexwatkinsf2')->middleware('auth', 'group');
 Route::get('watkins/watkinsf3', 'WatkinsController@indexwatkinsf3')->middleware('auth', 'group');
+Route::get('watkins/watkinsf4', 'WatkinsController@indexwatkinsf4')->middleware('auth', 'group');
 Route::get('watkins/watkinslower', 'WatkinsController@indexwatkinslower')->middleware('auth', 'group');
 Route::get('wilkinson/wilkinsonf1', 'WilkinsonController@indexwilkinsonf1')->middleware('auth', 'group');
 Route::get('wilkinson/wilkinsonf2', 'WilkinsonController@indexwilkinsonf2')->middleware('auth', 'group');
@@ -77,6 +79,7 @@ Route::get('davis/davisf2', 'DavisController@indexdavisf2')->middleware('auth', 
 Route::get('davis/davisf3', 'DavisController@indexdavisf3')->middleware('auth', 'group');
 Route::get('davis/davisf4', 'DavisController@indexdavisf4')->middleware('auth', 'group');
 Route::get('davis/davislower', 'DavisController@indexdavislower')->middleware('auth', 'group');
+
 
 Route::get('/aurora.edu', function () {
     return redirect()->away('https://aurora.edu/');
@@ -96,7 +99,7 @@ Route::resource('years', 'YearOfResidenceController')->middleware('auth', 'group
 Route::resource('roomate', 'RoommateController')->middleware('auth', 'group');
 
 Route::get('export', 'MyController@export')->name('export');
-Route::get('importExportView', 'MyController@importExportView');
+Route::get('importExportView', 'MyController@importExportView')-middleware('auth');
 Route::post('import', 'MyController@import')->name('import');
 Auth::routes();
 
