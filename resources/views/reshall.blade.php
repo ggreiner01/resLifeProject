@@ -94,7 +94,6 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <a href="\jenks"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
-                      <a href="\memorial"><button type="button" class="btn btn-sm btn-outline-secondary">To Floors</button></a>
                     </div>
                   </div>
                 </div>
