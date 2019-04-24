@@ -98,9 +98,9 @@ Route::resource('whos', 'WhoAndWhereController')->middleware('auth', 'group');
 Route::resource('years', 'YearOfResidenceController')->middleware('auth', 'group');
 Route::resource('roomate', 'RoommateController')->middleware('auth', 'group');
 
-Route::get('export', 'MyController@export')->name('export');
-Route::get('importExportView', 'MyController@importExportView')-middleware('auth');
-Route::post('import', 'MyController@import')->name('import');
+Route::get('export', 'MyController@export')->name('export')->middleware('auth');
+Route::get('importExportView', 'MyController@importExportView')->middleware('auth');
+Route::post('import', 'MyController@import')->name('import')->middleware('auth');
 Auth::routes();
 
 
