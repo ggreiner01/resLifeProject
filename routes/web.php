@@ -68,6 +68,7 @@ Route::get('watkins/watkinslower', 'WatkinsController@indexwatkinslower')->middl
 Route::get('watkins/watkinsf1', 'WatkinsController@indexwatkinsf1')->middleware('auth');
 Route::get('watkins/watkinsf2', 'WatkinsController@indexwatkinsf2')->middleware('auth');
 Route::get('watkins/watkinsf3', 'WatkinsController@indexwatkinsf3')->middleware('auth');
+Route::get('watkins/watkinsf4', 'WatkinsController@indexwatkinsf4')->middleware('auth');
 Route::get('watkins/watkinslower', 'WatkinsController@indexwatkinslower')->middleware('auth');
 Route::get('wilkinson/wilkinsonf1', 'WilkinsonController@indexwilkinsonf1')->middleware('auth');
 Route::get('wilkinson/wilkinsonf2', 'WilkinsonController@indexwilkinsonf2')->middleware('auth');
@@ -81,7 +82,7 @@ Route::get('davis/davislower', 'DavisController@indexdavislower')->middleware('a
 Route::get('/aurora.edu', function () {
     return redirect()->away('https://aurora.edu/');
 });
-
+Route::resource('roomate', 'RoommateController')->middleware('auth');
 Route::resource('selection', 'SelectionController')->middleware('auth');
 Route::resource('admins', 'AdminController')->middleware('auth');
 Route::resource('boarding', 'BoardingGroupController')->middleware('auth');
