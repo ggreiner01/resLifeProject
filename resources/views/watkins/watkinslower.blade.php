@@ -34,7 +34,7 @@
 
           <p style="text-align:center;"><img src="/pictures/Watkins_Lower_Floor.jpg"  alt="Card image cap" height="500" width ="380" style = "transform:rotate(270deg)"></p>
 
-          <h2>Section title</h2>
+          <h2>{{ $floor1->FloorDescription }} and {{ $floor2->FloorDescription }}</h2>
 		   <a href="\almost">to almost done page</a>
           <div class="table-responsive">
             <table class="table table-striped table-sm">
@@ -57,11 +57,12 @@
 				  @else
 						<td>no</td>
 				  @endif
+				  <td>{{ $room->AmountTaken }}</td>
 				 <form method="post" action="{{ route('selection.store', ['id' => $room->RoomID]) }}">
 				   @csrf
                   <td><button type="submit" class="btn btn-primary">Choose</button></td>	
 				  </form>
-                  <td><a href="#" class="btn btn-primary">Choose</a></td>
+                  
                 </tr>     
 				@endif				
 			@endforeach

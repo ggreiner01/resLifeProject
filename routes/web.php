@@ -51,6 +51,7 @@ Route::get('/wilkinson', function () {
 })->middleware('auth', 'group');
 Route::get('/watkins', function () {
     return view('watkins');
+
   
 })->middleware('auth', 'group');
 Route::get('/centennial/centf1', 'CentennialController@indexcentf1')->middleware('auth', 'group');
@@ -80,7 +81,6 @@ Route::get('davis/davisf3', 'DavisController@indexdavisf3')->middleware('auth', 
 Route::get('davis/davisf4', 'DavisController@indexdavisf4')->middleware('auth', 'group');
 Route::get('davis/davislower', 'DavisController@indexdavislower')->middleware('auth', 'group');
 
-
 Route::get('/aurora.edu', function () {
     return redirect()->away('https://aurora.edu/');
 });
@@ -97,6 +97,7 @@ Route::resource('users', 'UsersController')->middleware('auth', 'group');
 Route::resource('whos', 'WhoAndWhereController')->middleware('auth', 'group');
 Route::resource('years', 'YearOfResidenceController')->middleware('auth', 'group');
 Route::resource('roomate', 'RoommateController')->middleware('auth', 'group');
+
 
 Route::get('export', 'MyController@export')->name('export')->middleware('auth');
 Route::get('importExportView', 'MyController@importExportView')->middleware('auth');

@@ -35,6 +35,7 @@ class UsersImport implements ToModel
         $user = new Users([
             'name' => $row[3],
 			'email' => $row[5],
+			'password' => \Hash::make('123456'),
 			'StudentID'=> $row[0],
 			'Gender' => $gender,
 			'BoardingGroupID' => $row[6],

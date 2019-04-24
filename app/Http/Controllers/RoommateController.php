@@ -51,7 +51,7 @@ class RoommateController extends Controller
 		$who2 = \DB::table('WhoAndWhere')->where('StudentID', '=', $request->get('studentid2'))->first();
 		$student1 = \DB::table('Users')->where('StudentID', '=', $request->get('studentid1'))->first();
 		$student2 = \DB::table('Users')->where('StudentID', '=', $request->get('studentid2'))->first();
-		if($student1 != null && $student2 != null  && $student1->id !=  $student2->id && $who1 == null && $who2 == null ){
+		if($who != null && $student1 != null && $student2 != null  && $student1->id !=  $student2->id && $who1 == null && $who2 == null ){
         $people = new PeopleToRoomWith([
 		'Asker'=> $student->id,
 		'StudentID1' => $student1->id,
@@ -61,32 +61,39 @@ class RoommateController extends Controller
 		'RoomID' => $who->RoomID,
 		'YearOfResidenceID' => $who->YearOfResidenceID
 		]);
-		if($student1 != null && $student2 == null  && $student1->id !=  $student2->id && $who1 == null && $who2 == null){
-        $people = new PeopleToRoomWith([
-		'Asker'=> $student->id,
-		'StudentID1' => $student1->id,
-		'StudentID2' => null,
-		'BuildingID' => $who->BuildingID,
-		'FloorID' => $who->FloorID,
-		'RoomID' => $who->RoomID,
-		'YearOfResidenceID' => $who->YearOfResidenceID
-		]);
-		}
-		if($student1 == null && $student2 != null  && $student1->id !=  $student2->id && $who1 == null && $who2 == null){
-        $people = new PeopleToRoomWith([
-		'Asker'=> $student->id,
-		'StudentID1' => $student1->id,
-		'StudentID2' => null,
-		'BuildingID' => $who->BuildingID,
-		'FloorID' => $who->FloorID,
-		'RoomID' => $who->RoomID,
-		'YearOfResidenceID' => $who->YearOfResidenceID
-		]);
-		}
 		$people->timestamps = false;
         $people->save();
 		return redirect('/almost')->with('success', 'You have choosen some posible roommates.');
-		}else if($student1 != null && $student2 != null && $student1->StudentID ==  $student2->StudentID) {
+		}else if($who != null && $student1 != null && $request->get('studentid2') == null){
+        $people = new PeopleToRoomWith([
+		'Asker'=> $student->id,
+		'StudentID1' => $student1->id,
+		'StudentID2' => null,
+		'BuildingID' => $who->BuildingID,
+		'FloorID' => $who->FloorID,
+		'RoomID' => $who->RoomID,
+		'YearOfResidenceID' => $who->YearOfResidenceID
+		]);
+		$people->timestamps = false;
+        $people->save();
+		return redirect('/almost')->with('success', 'You have choosen some posible roommates.');
+		}else if($who != null && $request->get('studentid1') == null && $student2 != null){
+        $people = new PeopleToRoomWith([
+		'Asker'=> $student->id,
+		'StudentID1' => $student1->id,
+		'StudentID2' => null,
+		'BuildingID' => $who->BuildingID,
+		'FloorID' => $who->FloorID,
+		'RoomID' => $who->RoomID,
+		'YearOfResidenceID' => $who->YearOfResidenceID
+		]);
+		$people->timestamps = false;
+        $people->save();
+		return redirect('/almost')->with('success', 'You have choosen some posible roommates.');
+		}else if($who == null){
+			return redirect('/reshall')->with('error', 'you need to pick a room first.');
+		}
+		else if($student1 != null && $student2 != null && $student1->StudentID ==  $student2->StudentID) {
 			return redirect('/select')->with('error', 'cannot pick the same student.');
 		}else{
 			return redirect('/select')->with('error', 'cannot find students');
