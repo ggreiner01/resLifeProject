@@ -57,6 +57,7 @@
           <a class="dropdown-item" href="/users">Users</a>
           <a class="dropdown-item" href="/whos">Who and Where</a>
           <a class="dropdown-item" href="/years">Years</a>
+          <a class="dropdown-item" href="/importExportView">Import</a>
         </div>
       </li>
 	@endif
